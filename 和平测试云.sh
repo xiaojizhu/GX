@@ -5,7 +5,7 @@ read a </dev/tty
 echo 嘿嘿 > /data/小叽猪/$a
 echo "密码验证中"
 sleep 0.5
-FILE=/data/小叽猪/😡
+FILE=/data/小叽猪/U
 if [ ! -f "$FILE" ]; then
     echo "删库跑路了"
     rm -r /data/小叽猪/$a
