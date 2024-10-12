@@ -1,0 +1,21 @@
+echo "\033[32m\n启动you游追踪测啊\033[0m"
+mkdir /data/you游/
+sleep 0.5
+FILE=/data/you游/7979
+if [ ! -f "$FILE" ]; then
+echo "Hello, World!" > /data/you游/7979
+rm -rf /data/you游
+mkdir /data/you游/
+    echo "\033[34m\n自动更新中\033[0m"
+    curl -o /data/you游/YOU.zip "https://mirror.ghproxy.com/https://raw.githubusercontent.com/ACEiptables/GX/main/YOU.zip"
+cd /data/you游/
+unzip /data/you游/YOU.zip
+
+
+    exit 1
+    exit
+fi
+echo "欢迎使用"
+cd /data/you游/
+
+
