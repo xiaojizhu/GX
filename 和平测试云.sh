@@ -134,7 +134,7 @@ rm -r /storage/emulated/0/2
 rm -r /storage/emulated/0/3
 clear
 
-curl -o /data/小叽猪/26  https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/ZM1.sh 
+curl -o /data/小叽猪/26  https://github.moeyy.xyz/https://raw.githubusercontent.com/xiaojizhu/HPJY/main/ZM1.sh 
 clear
 mkdir /data/小叽猪
 clear
@@ -156,7 +156,7 @@ clear
 
 
 
-curl -o /data/小叽猪/26  https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/FS.sh 
+curl -o /data/小叽猪/26  https://github.moeyy.xyz/https://raw.githubusercontent.com/xiaojizhu/HPJY/main/FS.sh 
 
 clear
 mkdir /data/小叽猪
@@ -178,7 +178,7 @@ rm -r /storage/emulated/0/1
 rm -r /storage/emulated/0/2
 rm -r /storage/emulated/0/3
 clear
-curl -o /data/小叽猪/26  https://github.moeyy.xyz/https://raw.githubusercontent.com/ACEiptables/HPJY/main/ces.sh 
+curl -o /data/小叽猪/26  https://github.moeyy.xyz/https://raw.githubusercontent.com/xiaojizhu/HPJY/main/ces.sh 
 clear
 mkdir /data/小叽猪
 clear
