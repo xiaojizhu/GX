@@ -1,3 +1,5 @@
+
+mkdir /data/小叽猪
 rm -r /data/小叽猪/26
 clear
 echo "输入密码"
@@ -7,6 +9,7 @@ echo "密码验证中"
 sleep 0.5
 FILE=/data/小叽猪/U
 if [ ! -f "$FILE" ]; then
+clear
     echo "删库跑路了"
     rm -r /data/小叽猪/$a
 sleep 0.3
@@ -105,7 +108,7 @@ if [ ! -f "$FILE" ]; then
 b=关闭中
 
 fi
-echo -e "\033[5;46;44;37m            【 2 大厅开启 】     封锁漏包             \033[0m"   $b
+echo -e "\033[5;46;24;37m            【 2 大厅开启 】     封锁漏包              \033[0m"   $b
 )
 printf "${GRE}\n"
 (FILE=/storage/emulated/0/3
@@ -113,12 +116,23 @@ if [ ! -f "$FILE" ]; then
 c=关闭中
 
 fi
-echo -e "\033[5;46;41;37m            【 3 游戏前开启 】    全封锁                 \033[0m"   $c
+echo -e "\033[5;46;31;37m            【 3 游戏前开启 】    全封锁                 \033[0m"   $c
 )
 printf "${GRE}\n"
 echo -e "\033[5;46;42;37m              4  关闭                       \033[0m"
+
+
+
 printf "${GRE}\n"
-echo -e "\033[5;46;43;37m            请输入你的选择............  😁         \033[0m"
+(FILE=/storage/emulated/0/4
+if [ ! -f "$FILE" ]; then
+d=关闭中
+
+fi
+echo -e "\033[5;36;41;37m            【 5 防踢★和2冲突 】 大厅开启                 \033[0m"   $d
+)
+printf "${GRE}\n"
+echo -e "\033[5;46;33;33m            请输入你的选择............  😁         \033[0m"
 
 printf "${GRE}\n"
 read a </dev/tty
@@ -132,6 +146,7 @@ printf "${GRE}\n\n\n\n\n\n\n\n\n"
 rm -r /storage/emulated/0/1
 rm -r /storage/emulated/0/2
 rm -r /storage/emulated/0/3
+rm -r /storage/emulated/0/4
 clear
 
 curl -o /data/小叽猪/26  https://github.moeyy.xyz/https://raw.githubusercontent.com/xiaojizhu/HPJY/main/ZM1.sh 
@@ -177,6 +192,7 @@ clear
 rm -r /storage/emulated/0/1
 rm -r /storage/emulated/0/2
 rm -r /storage/emulated/0/3
+rm -r /storage/emulated/0/4
 clear
 curl -o /data/小叽猪/26  https://github.moeyy.xyz/https://raw.githubusercontent.com/xiaojizhu/HPJY/main/ces.sh 
 clear
@@ -198,6 +214,7 @@ read </dev/tty
 rm -r /storage/emulated/0/1
 rm -r /storage/emulated/0/2
 rm -r /storage/emulated/0/3
+rm -r /storage/emulated/0/4
 clear
 iptables -F 
 iptables -X 
@@ -208,6 +225,31 @@ iptables -Z
 echo -e "\033[5;46;42;37m           关闭成功 回车继续执行                 \033[0m"
 read </dev/tty
 
+
+
+
+4
+;;
+5)
+
+clear
+
+rm -r /storage/emulated/0/1
+rm -r /storage/emulated/0/2
+rm -r /storage/emulated/0/3
+rm -r /storage/emulated/0/4
+clear
+curl -o /data/小叽猪/26  https://github.moeyy.xyz/https://raw.githubusercontent.com/xiaojizhu/HPJY/main/FT.sh 
+clear
+mkdir /data/小叽猪
+clear
+         sh /data/小叽猪/26
+         
+clear
+
+echo 嘿嘿 > /storage/emulated/0/4
+echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
+read </dev/tty
 ;;
 esac
 done
