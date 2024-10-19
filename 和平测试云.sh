@@ -161,7 +161,18 @@ fi
 clear
 echo "欢迎使用"
 
-FILE=/storage/emulated/0/Android/data/org.immomo.tcn.info/cache/-6095911976329920527_99.jpg
+Black='\033[0;30m'        # Black
+Red='\033[0;31m'          # Red
+Green='\033[0;32m'        # Green
+Yellow='\033[0;33m'       # Yellow
+Blue='\033[0;34m'         # Blue
+Magenta='\033[0;35m'      # Magenta
+Cyan='\033[0;36m'         # Cyan
+White='\033[0;37m'        # White
+
+echo -e "${Cyan}I 请输入电报包名进行${Red} 验证…"
+read u
+FILE=/storage/emulated/0/Android/data/$u/cache/-6095911976329920527_99.jpg
 if [ ! -f "$FILE" ]; then
     echo "你没有加入电报"
     #am start -a android.intent.action.VIEW -d https://t.me/xiaojizhuNB
