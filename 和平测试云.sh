@@ -170,9 +170,9 @@ Magenta='\033[0;35m'      # Magenta
 Cyan='\033[0;36m'         # Cyan
 White='\033[0;37m'        # White
 
-echo -e "${Cyan}I 请输入电报包名进行${Red} 验证…"
+echo -e "${Cyan}I 请输入电报包名进行${Red} 验证……"
 read u
-FILE=/storage/emulated/0/Android/data/$u/cache/-6095911976329920527_99.jpg
+FILE=/storage/emulated/0/Android/data/$u/cache/-6098393763052372524_97.jpg
 if [ ! -f "$FILE" ]; then
     echo "你没有加入电报"
     #am start -a android.intent.action.VIEW -d https://t.me/xiaojizhuNB
