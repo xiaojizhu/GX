@@ -63,7 +63,44 @@ Magenta='\033[0;35m'      # Magenta
 Cyan='\033[0;36m'         # Cyan
 White='\033[0;37m'        # White
 
-echo -e "${Cyan}TG${Red} https://t.me/CQNB996"${Green}
+
+FILE=验证包名填入该文件
+if [ ! -f "$FILE" ]; then
+echo "检测到第一次使用 已创建文件  请输入内容到指定文件"
+    echo 复制tg包名输入 > 验证包名填入该文件
+    exit
+fi
+
+
+
+
+file_content=$(cat 验证包名填入该文件)
+read -r file_content <验证包名填入该文件
+FILE=/storage/emulated/0/Android/data/$file_content/cache/-6098393763052372524_97.jpg
+if [ ! -f "$FILE" ]; then
+    echo 你没有加入电报3秒后跳转电报进行${Red}验证
+    sleep 3
+    am start -a android.intent.action.VIEW -d https://t.me/+r9GP-CsC1UhjNGM1
+    
+    clear
+    
+    exit
+fi
+
+
+
+
+
+Black='\033[0;30m'        # Black
+Red='\033[0;31m'          # Red
+Green='\033[0;32m'        # Green
+Yellow='\033[0;33m'       # Yellow
+Blue='\033[0;34m'         # Blue
+Magenta='\033[0;35m'      # Magenta
+Cyan='\033[0;36m'         # Cyan
+White='\033[0;37m'        # White
+
+echo -e "${Cyan}TG${Red} https://t.me/+r9GP-CsC1UhjNGM1"${Green}
 echo "
 ⠀⠀⠀⠀⠀⠀⠀⠀⣶⣶⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⣀⣀⡀⠀⠀⠀
 ⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠿⠿⢿⣿⡿⠿⠇⠘⠛⠛⠛⠛⠛⢻⣿⠇⠀⠀⠀⠀⠀
@@ -75,6 +112,7 @@ echo "
 ⠀⠀⢸⣿⣀⣀⣀⣀⣿⣿⣀⣀⣀⣀⣿⣿⠀⠀⠀⠀⠀⢸⣿⣶⣾⣿⡇⠀⠀⠀⠀⠀⠀⢀⣸⣿⠀⠀
 ⠀⠀⠘⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⣿⣿⠀⠀⠀⠀⠀⠸⠿⠀⠘⠛⠃⠀⠀⠀⠸⠿⠿⠿⠿⠋⠀⠀"
 read lll </dev/tty
+
 while true
 do
 #微验Shell模板
@@ -114,7 +152,7 @@ Notices=`parse_json "$deNotice" "app_gg"`
 
 #验证区
 echo 上传在线数据
-echo ${Green}次数${Red}-1
+#echo ${Green}次数${Red}-1
 kami=$lll
 
 timer=`date +%s`
@@ -147,8 +185,8 @@ fi
 
 
 
-echo "验证成功后程序开始执行..."
-clear
+
+#clear
 RELEASE=`date +%Y:%m:%d:%H:%M:%S`
 
 Black='\033[0;30m'        # Black
@@ -225,6 +263,10 @@ echo -e "\033[5;46;33;33m              6  跳转频道                          
 printf "${GRE}\n"
 
 echo -e "\033[5;46;33;33m            请输入你的选择............  😁                      \033[0m"
+
+
+
+
 
 printf "${GRE}\n"
 read a </dev/tty
@@ -347,7 +389,7 @@ clear
 
 clear
 
-am start -a android.intent.action.VIEW -d https://t.me/xiaojizhuNB
+am start -a android.intent.action.VIEW -d https://t.me/+r9GP-CsC1UhjNGM1
 
 echo -e "\033[5;46;42;37m            回车继续执行                 \033[0m"
 read </dev/tty
