@@ -64,10 +64,14 @@ Cyan='\033[0;36m'         # Cyan
 White='\033[0;37m'        # White
 
 
-FILE=TG包名文件[打开看看]
+FILE=TG读取包名文件[打开看看]
 if [ ! -f "$FILE" ]; then
-echo "检测到第一次使用 已创建文件到当前目录  找到文件名字${Red}"TG包名文件[打开看看]""
-    echo 复制tg包名输入 > TG包名文件[打开看看]
+echo "检测到第一次使用 已创建文件到当前目录  找到文件名字${Red}"TG读取包名文件[打开看看]""
+    echo "
+    复制tg包名输入到这个文件里面，只留包名
+这个是验证的文件 输入电报软件的包名到这个文件里面才能验证你的电报
+把以上这些都删了 输入包名 只要包名 包括这些字要删了
+然后点开群头像 刷新验证 如果还是不行那就是你智商有问题" > TG读取包名文件[打开看看]
     exit
 fi
 
@@ -78,7 +82,7 @@ file_content=$(cat TG包名文件[打开看看])
 read -r file_content <TG包名文件[打开看看]
 FILE=/storage/emulated/0/Android/data/$file_content/cache/-6098393763052372524_97.jpg
 if [ ! -f "$FILE" ]; then
-echo "已创建文件到当前目录  找到文件名字${Red}"TG包名文件[打开看看]""
+echo "已创建文件到当前目录  找到文件名字${Red}"TG读取包名文件[打开看看]""
     echo 你没有加入电报3秒后跳转电报进行${Red}验证
     sleep 3
     am start -a android.intent.action.VIEW -d https://t.me/+r9GP-CsC1UhjNGM1
