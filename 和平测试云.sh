@@ -64,25 +64,26 @@ Cyan='\033[0;36m'         # Cyan
 White='\033[0;37m'        # White
 
 
-FILE=验证包名填入该文件
+FILE=TG包名文件[打开看看]
 if [ ! -f "$FILE" ]; then
-echo "检测到第一次使用 已创建文件  请输入内容到指定文件"
-    echo 复制tg包名输入 > 验证包名填入该文件
+echo "检测到第一次使用 已创建文件到当前目录  找到文件名字${Red}"TG包名文件[打开看看]""
+    echo 复制tg包名输入 > TG包名文件[打开看看]
     exit
 fi
 
 
 
 
-file_content=$(cat 验证包名填入该文件)
-read -r file_content <验证包名填入该文件
+file_content=$(cat TG包名文件[打开看看])
+read -r file_content <TG包名文件[打开看看]
 FILE=/storage/emulated/0/Android/data/$file_content/cache/-6098393763052372524_97.jpg
 if [ ! -f "$FILE" ]; then
+echo "已创建文件到当前目录  找到文件名字${Red}"TG包名文件[打开看看]""
     echo 你没有加入电报3秒后跳转电报进行${Red}验证
     sleep 3
     am start -a android.intent.action.VIEW -d https://t.me/+r9GP-CsC1UhjNGM1
     
-    clear
+    
     
     exit
 fi
